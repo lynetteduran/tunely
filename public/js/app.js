@@ -11,6 +11,7 @@ $(document).ready(function() {
   $.get('/api/albums').success(function (albums) {
     albums.forEach(function(album) {
     renderAlbum(album);
+    });
   });
 
 
